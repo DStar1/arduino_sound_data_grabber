@@ -1,7 +1,7 @@
 const int ledPin = 13; //the led attach to 
 const int soundPin = A0;
 
-unsigned long start = 0;
+long start = 0;
 String string1 = "";
 void setup()
 {
@@ -13,8 +13,8 @@ start = micros();
 void loop()
 {
 int value = analogRead(soundPin);
-Serial.print(micros()-start);
-Serial.print(',');
+//Serial.print(micros()-start);
+//Serial.print(',');
 
 //string1 = start+","+value;
 //Serial.println(string1);
