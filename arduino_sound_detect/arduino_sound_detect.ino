@@ -13,14 +13,14 @@ start = micros();
 
 void loop()
 {
-int value = analogRead(soundPin);
+//int value = analogRead(soundPin);
 Serial.print(micros()-start);
 //Serial.print(millis()-start);
 Serial.print(',');
 
 //string1 = start+","+value;
 //Serial.println(string1);
-Serial.println(value);
+Serial.println(analogRead(soundPin));//value);
 //if(value > 30)
 //{
 //digitalWrite(ledPin,HIGH);
