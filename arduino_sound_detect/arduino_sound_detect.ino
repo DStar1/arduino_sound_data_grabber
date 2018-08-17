@@ -8,13 +8,15 @@ void setup()
 pinMode(ledPin,OUTPUT);
 Serial.begin(115200);
 start = micros();
+//start = millis();
 }
 
 void loop()
 {
 int value = analogRead(soundPin);
-//Serial.print(micros()-start);
-//Serial.print(',');
+Serial.print(micros()-start);
+//Serial.print(millis()-start);
+Serial.print(',');
 
 //string1 = start+","+value;
 //Serial.println(string1);
